@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import HelloWorld from '@/components/HelloWorld'
-
+import it from 'element-ui/src/locale/lang/it'
 describe('HelloWorld.vue', () => {
   it('should render correct contents', () => {
     const Constructor = Vue.extend(HelloWorld)
