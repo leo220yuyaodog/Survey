@@ -1,53 +1,47 @@
-# diaowen.net maven ignore
-target
-classes
-/src/main/webapp/dcpic/
-dwfile
-# eclipse ignore
-.settings/
-.project
+######################################################################
+# Build Tools
+
+.gradle
+/build/
+!gradle/wrapper/gradle-wrapper.jar
+
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+######################################################################
+# IDE
+
+### STS ###
+.apt_generated
 .classpath
-catalina.*/
-# idea ignore
-.idea/
-*.ipr
-*.iml
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
 *.iws
-# temp ignore
+*.iml
+*.ipr
+
+### JRebel ###
+rebel.xml
+
+### NetBeans ###
+nbproject/private/
+build/*
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+######################################################################
+# Others
 *.log
-*.cache
-*.diff
-*.patch
-*.tmp
-# system ignore
-.DS_Store
-Thumbs.db
-# package ignore (optional)
-# *.jar
-# *.war
-# *.zip
-# *.tar
-# *.tar.gz
+*.xml.versionsBackup
+*.swp
 
-# Compiled class file
-*.class
-
-# Log file
-*.log
-
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-# *.jar
-*.war
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+!*/build/*.java
+!*/build/*.html
+!*/build/*.xml

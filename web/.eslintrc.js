@@ -22,15 +22,6 @@ module.exports = {
         "allowFirstLine": false
       }
     }],
-    "vue/html-self-closing": ["error",{
-      "html": {
-        "void": "never",
-        "normal": "any",
-        "component": "any"
-      },
-      "svg": "always",
-      "math": "always"
-    }],
     "vue/singleline-html-element-content-newline": "off",
     "vue/multiline-html-element-content-newline":"off",
     "vue/name-property-casing": ["error", "PascalCase"],
@@ -182,9 +173,9 @@ module.exports = {
       'after': true
     }],
     'space-before-blocks': [2, 'always'],
-    'space-before-function-paren': [2, 'always'],
+    'space-before-function-paren': [2, 'never'],
     'space-in-parens': [2, 'never'],
-    'space-infix-ops': 0,
+    'space-infix-ops': 2,
     'space-unary-ops': [2, {
       'words': true,
       'nonwords': false
@@ -200,9 +191,8 @@ module.exports = {
     'yoda': [2, 'never'],
     'prefer-const': 2,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'object-curly-spacing': [2, 'never', {
-      objectsInObjects: false,
-      arraysInObjects: false
+    'object-curly-spacing': [2, 'always', {
+      objectsInObjects: false
     }],
     'array-bracket-spacing': [2, 'never']
   }
